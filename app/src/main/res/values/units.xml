@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="unitsArray">
+        <item>Fahrenheit to Celcius</item>item>
+        <item>Celcius to Fahrenheit</item>item>
+        <item>Celcius to Kelvin</item>item>
+        <item>Kelvin to Celcius</item>item>
+        <item>Lbs to Kgs</item>item>
+        <item>Ounces to grams</item>item>
+        <item>Tons to Kgs</item>item>
+        <item>Inches to centimetres</item>item>
+        <item>Feet to centimetres</item>item>
+        <item>Yards to centimetres</item>item>
+        <item>Miles to Kms</item>item>
+    </string-array>
+</resources>
