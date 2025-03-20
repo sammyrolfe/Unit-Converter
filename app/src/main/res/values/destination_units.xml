@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="destinationUnitsArray">
+        <item>Fahrenheit</item>item>
+        <item>Celsius</item>item>
+        <item>Kelvin</item>item>
+        <item>Lbs</item>item>
+        <item>Kgs</item>item>
+        <item>Ounces</item>item>
+        <item>Grams</item>item>
+        <item>Tons</item>item>
+        <item>Centimetres</item>item>
+        <item>Inches</item>item>
+        <item>Feet</item>item>
+        <item>Yards</item>item>
+        <item>Miles</item>item>
+        <item>Kms</item>item>
+    </string-array>
+</resources>

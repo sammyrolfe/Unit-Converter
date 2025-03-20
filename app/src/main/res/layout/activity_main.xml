@@ -10,7 +10,15 @@
 
 
     <Spinner
-        android:id="@+id/unit_spinner"
+        android:id="@+id/source_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="50dp"
+        />
+
+    <Spinner
+        android:id="@+id/destination_unit_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -23,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
-        android:text="Type here"
         />
 
     <Button
