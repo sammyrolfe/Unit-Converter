@@ -148,6 +148,9 @@ public class MainActivity extends AppCompatActivity {
             case "Lbs to Tons":
                 lbsToTons();
                 break;
+            case "Lbs to Grams":
+                lbsToGrams();
+                break;
             case "Ounces to Lbs":
                 ouncesToLbs();
                 break;
@@ -171,6 +174,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "Kgs to Tons":
                 kgsToTons();
+                break;
+            case "Kgs to Ounces":
+                kgsToOunces();
                 break;
             case "Kgs to Grams":
                 kgsToGrams();
@@ -232,6 +238,9 @@ public class MainActivity extends AppCompatActivity {
             case "Centimetres to Yards":
                 centimetresToYards();
                 break;
+            case "Centimetres to Kms":
+                centimetresToKms();
+                break;
             case "Miles to Kms":
                 milesToKms();
                 break;
@@ -264,6 +273,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default:
                 Toast.makeText(this, "Please select compatible units", Toast.LENGTH_SHORT).show();
+                resultText.setText(String.format("N/A"));
+
         }
     }
 
@@ -323,6 +334,13 @@ public class MainActivity extends AppCompatActivity {
         resultText.setText(String.format("Result: %.2f tons", tons));
     }
 
+    private void lbsToGrams() {
+        String inputString = unitInput.getText().toString();
+        double lbs = Double.parseDouble(inputString);
+        double grams = (lbs * 453.6);
+        resultText.setText(String.format("Result: %.2f grams", grams));
+    }
+
     private void lbsToOunces() {
         String inputString = unitInput.getText().toString();
         double lbs = Double.parseDouble(inputString);
@@ -356,6 +374,13 @@ public class MainActivity extends AppCompatActivity {
         double kgs = Double.parseDouble(inputString);
         double grams = (kgs * 1000);
         resultText.setText(String.format("Result: %.2f grams", grams));
+    }
+
+    private void kgsToOunces() {
+        String inputString = unitInput.getText().toString();
+        double kgs = Double.parseDouble(inputString);
+        double ounces = (kgs * 35.274);
+        resultText.setText(String.format("Result: %.2f ounces", ounces));
     }
 
     private void ouncesToGrams() {
@@ -483,6 +508,13 @@ public class MainActivity extends AppCompatActivity {
         resultText.setText(String.format("Result: %.2f miles", miles));
     }
 
+    private void centimetresToKms() {
+        String inputString = unitInput.getText().toString();
+        double cms = Double.parseDouble(inputString);
+        double kms = (cms / 100000);
+        resultText.setText(String.format("Result: %.2f kms", kms));
+    }
+
     private void feetToCentimetres() {
         String inputString = unitInput.getText().toString();
         double feet = Double.parseDouble(inputString);
@@ -535,7 +567,7 @@ public class MainActivity extends AppCompatActivity {
     private void yardsToInches() {
         String inputString = unitInput.getText().toString();
         double yards = Double.parseDouble(inputString);
-        double inches = (yards / 39370);
+        double inches = (yards * 36);
         resultText.setText(String.format("Result: %.2f inches", inches));
     }
 
